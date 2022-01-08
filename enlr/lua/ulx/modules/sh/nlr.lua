@@ -7,7 +7,7 @@ function ulx.removenlr( calling_ply, target_plys )
 
 	ulx.fancyLogAdmin( calling_ply, "#A removed NLR from #T", target_plys )
 end
-local strip = ulx.command( CATEGORY_NAME, "ulx removenlr", ulx.removenlr, "!removenlr" )
-strip:addParam{ type=ULib.cmds.PlayersArg }
-strip:defaultAccess( ULib.ACCESS_ADMIN )
-strip:help( "Removes NLR from the target(s)." )
+local nlrremove = ulx.command( CATEGORY_NAME, "ulx removenlr", ulx.removenlr, "!removenlr" )
+nlrremove:addParam{ type=ULib.cmds.PlayersArg }
+nlrremove:defaultAccess( ULib.ACCESS_ADMIN )
+nlrremove:help( "Removes NLR from the target(s)." )
